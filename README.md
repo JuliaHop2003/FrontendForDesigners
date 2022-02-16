@@ -37,6 +37,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Afbeeldingen (de bellenblaas) kunnen verplaatsen van onder naar boven in een soort tijdlijn
   - Belletjes door een cirkel kunnen laten gaan
   - Belletjes omhoog laten zweven
+
+    ### Je font: 
+  Similar font:
+  <img src="readme-images/Julia_Hop_FvD_font.jpg" width="375px" alt="storyboard voor opdracht 1">
+
  
 </details>
 
