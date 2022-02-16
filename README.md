@@ -38,7 +38,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Belletjes door een cirkel kunnen laten gaan
   - Belletjes omhoog laten zweven
 
-    ### Je font: 
+  ### Je logo:
+  <img src="readme-images/Julia_Hop_FvD_logo.png" width="375px" alt="storyboard voor opdracht 1"> 
+
+  ### Je font: 
   Similar font:
   <img src="readme-images/Julia_Hop_FvD_font.png" width="375px" alt="storyboard voor opdracht 1">
 
