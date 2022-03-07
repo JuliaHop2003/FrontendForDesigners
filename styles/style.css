@@ -1,0 +1,182 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+	font-family: 'eenfont';
+	src: url('../fonts/eenfont.woff2') format('woff2'),
+			 url('../fonts/eenfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #000000;
+	--color-main: #00b0cf;
+	--color-secondary: #7cc500;
+	--color-background: #eee;
+
+	--gradient: linear-gradient(90deg,
+	#00b0cf,
+	#00b997,
+	#00bd62,
+	#42bd06,
+	#7cc500,
+	#00b0cf,
+	#00b997,
+	#00bd62,
+	#42bd06,
+	#7cc500
+	);
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-family: dunbar-tall, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/**********/
+/* ECOVER */
+/**********/
+.logoNaam {
+	color: var(--color-main);
+	font-size: 15vmin;
+	display: flex;
+	justify-content: center;
+	animation: fade-in 5s infinite;
+	-webkit-background-clip: text;
+	animation: fade-in 5s, linear-gradient 1s linear infinite reverse;
+	background-image: var(--gradient);
+	background-size: 200% 200%;		
+	color: transparent;
+	position: relative;
+}
+
+@keyframes fade-in {
+	0% {
+		transform: translateX( calc(-50vw - 50%) );
+		opacity: 0;
+	}
+	100% {
+		transform: none;
+		opacity: 100;
+	}
+}
+
+@keyframes linear-gradient {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+.soapCircle {
+	height: 40px;
+	width: 40px;
+	background-color: #a4e6fe;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.moon {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	box-shadow: 3px 3px 0 0 #eeebf3;
+	position: absolute;
+  }
+
+.bubbleBlowingCircle {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	border: 15px solid var(--color-secondary);
+	position: absolute;
+	top: 31%;
+	left: 45.4%;
+}
+
+.bubbleBlowingCircle2 {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	border: 7.5px solid var(--color-secondary);
+	position: absolute;
+	top: 122px;
+	left: 668px;
+}
+
+.line {
+	width: 7.5px;
+	height: 150px;
+	background: var(--color-secondary);
+	position: absolute;
+	top: 161px;
+	left: 684px;
+}
+
+.oval {
+	width: 80px;
+	height: 20px;
+	background: var(--color-secondary);
+	border-radius: 80px / 20px;
+	position: absolute;
+	top: 311px;
+	left: 650px;
+}
+
+.square {
+	width: 80px;
+	height: 60px;
+	background: var(--color-secondary);
+	position: absolute;
+	top: 322px;
+	left: 650px;
+}
+
+.oval2 {
+	width: 80px;
+	height: 10px;
+	background: var(--color-secondary);
+	border-radius: 80px / 10px;
+	position: absolute;
+	top: 378px;
+	left: 650px;
+}
