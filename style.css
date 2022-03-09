@@ -55,6 +55,29 @@ button, summary {
 	);
 }
 
+@media (prefers-color-scheme:dark) {
+	:root {
+		--color-text: #fff;
+		--color-main: #00b0cf;
+		--color-secondary: #7cc500;
+		--color-secondary-shadow: #568800;
+		--color-background: #111;
+	
+		--gradient: linear-gradient(90deg,
+		#00b0cf,
+		#00b997,
+		#00bd62,
+		#42bd06,
+		#7cc500,
+		#00b0cf,
+		#00b997,
+		#00bd62,
+		#42bd06,
+		#7cc500
+		);
+	}
+  }
+  
 
 
 
