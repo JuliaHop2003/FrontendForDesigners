@@ -14,7 +14,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
+  1. https://www.youtube.com/watch?v=CZTCciHE72I&t=601s (vanaf 8:50)
   2. -bron 2-
   3. -...-
 
@@ -57,19 +57,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/karakteristiekScreenshot.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  Van te voren leek het mij lastig om zelf vormen te maken, maar dit vond ik uiteindelijk meevallen. Wel vond ik het lastig om de vormen responsive te maken, dus daarbij had ik hulp gevraagd en toen heb ik geleerd dat je dan met vmin moet werken. Ook leek het mij lastig om de belletjes te laten zweven, maar daarvoor kwam ik een handige tutorial tegen (zie bronnen) en met hulp daarvan heb ik dus reëele belletjes kunnen maken. De color gradient animatie heb ik gemaakt met behulp van voorbeeldopdrachten van FED. Ik vind dat de color gradient mooi is gelukt en de in-fade animatie ging ook goed.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Als ik meer tijd had had ik misschien die belletjes later in beeld willen laten komen, want nu zie je ze al gelijk in de 'o' zitten en eigenlijk wil ik dat ze pas komen wanneer de bellenblaas op zijn plek staat.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  
 </details>
 
 
