@@ -1,0 +1,126 @@
+/* CSS Document */
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/***********************/
+/* JOUW PARTY PLAYLIST */
+/***********************/
+#drag {
+	align-items: center;
+	background: var(--color-main);
+	border-radius: 1rem;
+	display: flex;
+	height: 5rem;
+	justify-content: space-evenly;
+	margin: 0 2em 2em;
+}
+
+#drag ul {
+	flex-grow: 1;
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+#drag > a {
+	margin-right: 2rem;
+}
+
+
+
+
+
+/**********************/
+/* ONTDEK PARTY SONGS */
+/**********************/
+
+#row {
+	display: flex;
+	gap: 1em;
+    overflow: auto;
+	scroll-snap-type: x mandatory;
+}
+
+#row li {
+	background: var(--color-main);
+	border-radius: 1rem;
+	cursor: grab;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 2em;
+	padding: var(--whiteSpace);	
+	width: min(80%, 18em);
+	flex-shrink: 0;
+}
+
+#row li.sortable-ghost {
+	opacity: .25;
+}
+
+#row li.sortable-drag {
+	cursor: grabbing;
+}
+
+#row li img {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	justify-self: center;
+}
+
+#row li h3, li h4 {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	margin: 0;
+	text-align: center;
+}
+
+#row li button {
+	justify-self: center;
+}
+
+#row li p {
+	justify-self: center;
+	margin: 1rem;
+}
+
+#row li p:last-of-type {
+	grid-column-start: 1;
+	grid-column-end: -2;
+	margin-top: 1rem;
+}
+
+
+
+
+
+/**************************/
+/* ONTDEK NOG MEER GENRES */
+/**************************/
+#tags {
+	scroll-snap-type: x mandatory;
+	display: flex;
+	overflow: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tags button {
+	background: var(--color-button);
+	border-radius: 1em;
+	color: var(--color-text-secondary);
+	column-gap: 1em;
+	grid-column-end: -1;
+	grid-column-start: 1;
+	justify-self: center;
+	margin-left: 2em;
+	padding: var(--whiteSpace);
+	flex-shrink: 0;
+}
+
+#tags button:hover {
+	background: var(--color-button-hover);
+	color: var(--color-text-secondary);
+}
