@@ -1,0 +1,131 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+	font-family: 'eenfont';
+	src: url('../fonts/eenfont.woff2') format('woff2'),
+			 url('../fonts/eenfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	box-sizing: border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-background:#f1f1f1;
+	--color-button: #ff14af;
+	--color-button-hover: #c50082;
+	--color-main: #39FF14;
+	--color-text: #111;
+	--color-text-secondary: #fff;
+
+	--border-radius: 1em;
+	--whiteSpace: clamp(1em, 4vw, 1.5em);
+}
+
+@media (prefers-color-scheme:dark) {
+	:root {
+	--color-background:#0e0e0e;
+	--color-button: #39FF14;
+	--color-button-hover: #23dc00;
+	--color-main: #ff14af;
+	--color-text: #fff;
+	--color-text-secondary: #111;
+
+	--border-radius: 1em;
+	--whiteSpace: clamp(1em, 4vw, 1.5em);
+}
+}
+
+
+
+
+
+/**********/
+/* HEADER */
+/**********/
+header {
+	align-items: center;
+	background: var(--color-main);
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	height: 3rem;
+	justify-content: center;
+}
+
+
+
+
+
+/************/
+/* ALGEMEEN */
+/************/
+main {
+	background: var(--color-background);
+	color: var(--color-text);
+	font-family: eenfont, sans-serif;
+}
+
+h2 {
+	font-size: 1.25rem;
+	margin-left: 2em;
+}
+
+
+
+
+
+/***********/
+/* BUTTONS */
+/***********/
+.playPauseBTN {
+	background: var(--color-button);
+	border-radius: var(--border-radius);
+	color: var(--color-text-secondary);
+	height: 3em;
+	margin-left: 2em;
+	width: 6em;
+}
+
+.playPauseBTN:hover {
+	background: var(--color-button-hover);
+	color: var(--color-text-secondary);
+}
+
+.favoBTN {
+	background: var(--color-button);
+	border-radius: var(--border-radius);
+	color: var(--color-text-secondary);
+	height: 3em;
+	margin-left: 2em;
+	width: 6em;
+}
+
+.favoBTN:hover {
+	background: var(--color-button-hover);
+	color: var(--color-text-secondary);
+}

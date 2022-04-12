@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/index.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<main>
+	<header>
+		<a href="index.html">
+			<img src="images/home.png" alt="home">
+		</a>
+		<h1>Hop hop gas erop!</h1>
+	</header>
+
+	<h2>Jouw party playlist:</h2>
+	<div id="drag">
+		<ul id="playlist"></ul>
+		<a href="list.html">
+			<img src="images/fullscreen.png" alt="fullscreen">
+		</a>
+	</div>
+
+	<h2>Ontdek party songs:</h2>
+	<ul class="row">
+		<li class="nederlands">
+			<img src="images/tantoelekker.png" alt="tantoelekker">
+			<h3>Tantoe lekker</h3>
+			<h4>Antoon</h4>
+			<audio id="tantoelekker">
+				<source src="audio/Antoon  Big2 - Tantoe Lekker.mp3" type="audio/mpeg">
+			</audio>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Nederlands</p>
+		</li>
+		<li class="dance">
+			<img src="images/tobrazil.png" alt="tobrazil">
+			<h3>To Brazil!</h3>
+			<h4>Vengaboys</h4>
+			<audio id="tobrazil">
+				<source src="audio/Vengaboys - To Brazil!.mp3" type="audio/mpeg">
+			</audio>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Dance</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+		<li>
+			<img src="images/noimage.png" alt="noimage">
+			<h3>Titel</h3>
+			<h4>Artiest</h4>
+			<button class="playPauseBTN">Play &#9658;</button>
+			<button class="favoBTN">Favoriet &#10084;</button>
+			<p>Genre: Onbekend</p>
+		</li>
+	</ul>
+
+	<h2>Kies een genre:</h2>
+	<article>
+		<input type="radio" name="filter" id="all" value="all" checked>
+		<label for="all">Alles</label>
+		
+		<input type="radio" name="filter" id="nederlands" value="nederlands">
+		<label for="nederlands">Nederlands</label>
+
+		<input type="radio" name="filter" id="dance" value="dance">
+		<label for="dance">Dance</label>
+	</article>
+
+<!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="scripts/index.js"></script>
+</main>
+	
+</html>

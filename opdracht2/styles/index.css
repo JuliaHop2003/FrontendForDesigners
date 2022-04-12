@@ -1,0 +1,147 @@
+/* CSS Document */
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/***********************/
+/* JOUW PARTY PLAYLIST */
+/***********************/
+#drag {
+	align-items: center;
+	background: var(--color-main);
+	border-radius: 1rem;
+	display: flex;
+	height: 8em;
+	justify-content: space-evenly;
+	margin: 0 2em 2em;
+}
+
+#drag ul {
+	flex-grow: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+
+	/* de items in de playlist na elkaar */
+	display: flex;
+	gap: 1em;
+	overflow: auto;
+	padding: 1em;
+}
+
+#drag > a {
+	margin-right: 2rem;
+}
+
+/* empty/zero state tekstje ipv in de html */
+#drag ul:empty::after {
+	content: "Sleep hier liedjes naar toe";
+}
+
+/* de img blijft als enige zichtbaar */
+#drag ul img {
+	border-radius: 1em;
+	display:b lock;
+	height: 6em;
+}
+
+/* info die je niet nodig hebt verbergen */
+/* technisch niet super mooi, maar voor dit prototype ok genoeg */
+#drag ul li button,
+#drag ul li h3,
+#drag ul li h4,
+#drag ul li p {
+	display: none;
+}
+
+
+/**********************/
+/* ONTDEK PARTY SONGS */
+/**********************/
+
+.row {
+	display: flex;
+	gap: 1em;
+    overflow: auto;
+	scroll-snap-type: x mandatory;
+}
+
+.row li {
+	background: var(--color-main);
+	border-radius: 1rem;
+	cursor: grab;
+	display: grid;
+	flex-shrink: 0;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 2em;
+	padding: var(--whiteSpace);	
+	width: min(80%, 18em);
+}
+
+.row li.sortable-ghost {
+	opacity: .25;
+}
+
+.row li.sortable-drag {
+	cursor: grabbing;
+}
+
+.row li img {
+	grid-column-end: -1;
+	grid-column-start: 1;
+	justify-self: center;
+
+	/* om het kleine randje onder de image weg te halen */
+	/* een image is standaard inline */
+	display:block;
+}
+
+.row li h3, 
+/* hier ook .row voorgezet */
+.row li h4 {
+	grid-column-end: -1;
+	grid-column-start: 1;
+	margin: 0;
+	text-align: center;
+}
+
+.row li h4 {
+	margin-bottom: 1em;
+}
+
+.row li button {
+	justify-self: center;
+}
+
+.row li p {
+	justify-self: center;
+	margin: 1rem;
+}
+
+.row li p:last-of-type {
+	grid-column-end: -2;
+	grid-column-start: 1;
+	margin-top: 1rem;
+}
+
+.row[data-filter="nederlands"] li:not(.nederlands) {
+	display: none;
+}
+
+.row[data-filter="dance"] li:not(.dance) {
+	display: none;
+}
+
+
+
+
+
+/******************/
+/* KIES EEN GENRE */
+/******************/
+article {
+	margin: 0 2em 0;
+}
